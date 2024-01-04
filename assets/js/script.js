@@ -1,8 +1,8 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-const dayjs = require('dayjs')  
-dayjs().format()
+const dayjs = require('dayjs');
+dayjs().format();
 
 $(function () {
   $("#currentDay").text(dayjs().format("MMMM D, YYYY"));
@@ -21,7 +21,7 @@ $(function () {
   var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
   if (blockHour < currentHour) {
-    $(this).removeClass("present furture").addClass("past");
+    $(this).removeClass("present future").addClass("past");
   } else if (blockHour === currentHour) {
     $(this).removeClass("past future").addClass("present");
   } else {
@@ -29,7 +29,7 @@ $(function () {
   }
   });
 
-  $("time-block").each(function () {
+  $(".time-block").each(function () {
     var timeBlockId = $(this).attr("id");
     var savedInput = localStorage.getItem(timeBlockId);
 
