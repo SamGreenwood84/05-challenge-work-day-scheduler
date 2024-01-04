@@ -34,4 +34,4 @@ The starter code uses the Day.jsLinks to an external site. library to work with 
 const dayjs = require('dayjs')
 //import dayjs from 'dayjs' // ES 2015
 dayjs().format()
-![Alt text](image.png)
+![js script](image.png)

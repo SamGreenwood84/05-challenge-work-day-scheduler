@@ -1,7 +1,43 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+const dayjs = require('dayjs')  
+dayjs().format()
+
 $(function () {
+  $("#currentDay").text(dayjs().format("MMMM D, YYYY"));
+
+  $(".saveBtn").on("click", function () {
+    
+    var timeBlockId = $(this).parent().attr("id");
+    var userInput = $(this).siblings(".description").val();
+    
+    localStorage.setItem(timeBlockId, userInput);
+  });
+
+  var currentHour = dayjs().hour();
+  $(".time-block").each(function () {
+  
+  var blockHour = parseInt($(this).attr("id").split("-")[1]);
+
+  if (blockHour < currentHour) {
+    $(this).removeClass("present furture").addClass("past");
+  } else if (blockHour === currentHour) {
+    $(this).removeClass("past future").addClass("present");
+  } else {
+    $(this).removeClass("past present").addClass("future");
+  }
+  });
+
+  $("time-block").each(function () {
+    var timeBlockId = $(this).attr("id");
+    var savedInput = localStorage.getItem(timeBlockId);
+
+    if (savedInput) {
+      $(this).find("description").val(savedInput);
+    }
+  });
+  });
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
     // local storage. HINT: What does `this` reference in the click listener
@@ -20,5 +56,4 @@ $(function () {
     // attribute of each time-block be used to do this?
     //
     // TODO: Add code to display the current date in the header of the page.
-  });
   
