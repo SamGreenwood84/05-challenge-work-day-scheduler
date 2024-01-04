@@ -32,6 +32,10 @@ The starter code uses the Day.jsLinks to an external site. library to work with 
 [day.js.org](https://day.js.org/docs/en/installation/node-js)
 
 const dayjs = require('dayjs')
-//import dayjs from 'dayjs' // ES 2015
-dayjs().format()
+
 ![js script](image.png)
+
+**ask-296418 Learning Assistant Help:**
+
+![Alt text](assets/images/this-dayjs.png)
+![Alt text](<assets/images/learning asst-reference.png>)
