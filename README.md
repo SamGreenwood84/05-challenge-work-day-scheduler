@@ -1,13 +1,15 @@
 # 05-Challenge-Work-Day-Scheduler
-Third-Party APIs Challenge: Work Day Scheduler
+**Third-Party APIs Challenge: Work Day Scheduler**
 
-User Story
+***User Story***
 
 AS AN employee with a busy schedule
+
 I WANT to add important events to a daily planner
+
 SO THAT I can manage my time effectively
 
-Acceptance Criteria
+***Acceptance Criteria***
 
 GIVEN I am using a daily planner to create a schedule
 
@@ -42,7 +44,9 @@ Create a simple calendar application that allows a user to save events for each 
 
 The starter code uses the Day.jsLinks to an external site. library to work with date and time, but feel free to use a different JavaScript solution to handle this functionality.
 
-[day.js.org](https://day.js.org/docs/en/installation/node-js)
+# References
+
+[day.js Library](https://day.js.org/docs/en/installation/node-js)
 
 const dayjs = require('dayjs')
 
@@ -54,4 +58,4 @@ const dayjs = require('dayjs')
 
 **Asked for help from Classmate Shawn Meister**
 
-![Alt text](image.png)
+![Alt text](<assets/images/classmate assistance-ppf reference.png>)

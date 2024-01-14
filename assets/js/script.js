@@ -10,6 +10,7 @@ $(document).ready(function () {
 
   // Save user input to local storage when the save button is clicked
   $(".saveBtn").on("click", function () {
+    console.log("Save button clicked");
     var timeBlockId = $(this).parent().attr("id");
     var userInput = $(this).siblings(".description").val();
 
@@ -20,12 +21,15 @@ $(document).ready(function () {
   // Compare current time with each time block and apply appropriate classes
   function updateHourlyBlocks() {
     var currentHour = dayjs().hour();
+    console.log("blockHour", blockHour);
 
     $(".time-block").each(function () {
       var $timeBlock = $(this);
       var blockHour = parseInt($timeBlock.attr("id").split("-")[1]);
 
-  // Remove all classes and add the appropriate class based on the comparison
+      console.log("blockHour", blockHour);
+
+      // Remove all classes and add the appropriate class based on the comparison
       if (blockHour < currentHour) {
         $timeBlock.removeClass("present future").addClass("past");
       } else if (blockHour === currentHour) {
