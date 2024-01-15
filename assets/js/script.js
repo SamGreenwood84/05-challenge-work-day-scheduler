@@ -15,18 +15,17 @@ $(document).ready(function () {
     var userInput = $(this).siblings(".description").val();
 
     localStorage.setItem(timeBlockId, userInput);
-    console.log("userInput");
+    console.log("userInput", userInput);
   });
 
   // Compare current time with each time block and apply appropriate classes
   function updateHourlyBlocks() {
     var currentHour = dayjs().hour();
-    console.log("blockHour", blockHour);
+    console.log("currentHour", currentHour)
 
     $(".time-block").each(function () {
       var $timeBlock = $(this);
       var blockHour = parseInt($timeBlock.attr("id").split("-")[1]);
-
       console.log("blockHour", blockHour);
 
       // Remove all classes and add the appropriate class based on the comparison
