@@ -147,3 +147,5 @@ const dayjs = require('dayjs')
 
 ![Alt text](<assets/images/classmate assistance-ppf reference.png>)
 
+Screenshot of finished code at 8:11pm (will not show colors until 24 hour clock resets)
+![Alt text](assets/images/screenshot.png)
