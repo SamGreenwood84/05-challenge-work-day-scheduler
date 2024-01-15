@@ -46,7 +46,7 @@ Create a simple calendar application that allows a user to save events for each 
 
 ![Alt text](assets/images/05-third-party-apis-homework-demo.gif)
 
-The starter code uses the Day.jsLinks to an external site. library to work with date and time, but feel free to use a different JavaScript solution to handle this functionality.
+The starter code uses the Day.jsLinks to an external site. library to work with date and time.
 
 # Refactored Code
 
