@@ -152,4 +152,4 @@ Screenshot of finished code at 8:11pm (will not show colors until 24 hour clock 
 
 GitHub Repo-https://github.com/SamGreenwood84/05-Challenge-Work-Day-Scheduler.git
 
-Live Site Link-
+Live Site Link-https://github.com/SamGreenwood84/05-challenge-work-day-scheduler.git
