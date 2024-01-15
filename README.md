@@ -147,13 +147,12 @@ const dayjs = require('dayjs')
 
 ![Alt text](<assets/images/classmate assistance-ppf reference.png>)
 
-Screenshot of finished code at 8:11pm (will not show colors until 24 hour clock resets)
-![Alt text](assets/images/screenshot.png)
-
-GitHub Repo-https://github.com/SamGreenwood84/05-Challenge-Work-Day-Scheduler.git
-
-Live Site Link-https://github.com/SamGreenwood84/05-challenge-work-day-scheduler.git
-
-
 ask-297898 Learning Assistant:
 ![Alt text](assets/images/learningassistant-reference.png)
+
+GitHub Repo-https://github.com/SamGreenwood84/05-challenge-work-day-scheduler.git
+
+Live Site Link-https://samgreenwood84.github.io/05-challenge-work-day-scheduler/
+
+Screenshot of finished code at 8:11pm (will not show colors until 24 hour clock resets)
+![Alt text](assets/images/screenshot.png)
